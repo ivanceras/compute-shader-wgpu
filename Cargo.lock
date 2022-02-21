@@ -236,6 +236,35 @@ dependencies = [
 ]
 
 [[package]]
+name = "compute-shader-wgpu"
+version = "0.4.0-alpha.12"
+dependencies = [
+ "bytemuck",
+ "cfg-if 1.0.0",
+ "console_error_panic_hook",
+ "console_log",
+ "env_logger",
+ "futures",
+ "ndk-glue 0.4.1",
+ "shared",
+ "spirv-builder",
+ "spirv-std",
+ "structopt",
+ "strum",
+ "wasm-bindgen-futures",
+ "web-sys",
+ "wgpu",
+ "winit",
+]
+
+[[package]]
+name = "compute-shader-wgpu-builder"
+version = "0.4.0-alpha.12"
+dependencies = [
+ "spirv-builder",
+]
+
+[[package]]
 name = "console_error_panic_hook"
 version = "0.1.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -512,35 +541,6 @@ dependencies = [
  "log",
  "regex",
  "termcolor",
-]
-
-[[package]]
-name = "example-runner-wgpu"
-version = "0.4.0-alpha.12"
-dependencies = [
- "bytemuck",
- "cfg-if 1.0.0",
- "console_error_panic_hook",
- "console_log",
- "env_logger",
- "futures",
- "ndk-glue 0.4.1",
- "shared",
- "spirv-builder",
- "spirv-std",
- "structopt",
- "strum",
- "wasm-bindgen-futures",
- "web-sys",
- "wgpu",
- "winit",
-]
-
-[[package]]
-name = "example-runner-wgpu-builder"
-version = "0.4.0-alpha.12"
-dependencies = [
- "spirv-builder",
 ]
 
 [[package]]
